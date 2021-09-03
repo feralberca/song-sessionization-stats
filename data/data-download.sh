@@ -10,10 +10,11 @@ rm -rf "$DIR/lastfm-dataset-1K"
 
 echo "Downloading data to $DIR"
 
-curl -L -o "$DIR/song-dataset.gz" "$FILE_DATASET"
+FILE_OUT="$DIR/song-dataset.tar.gz"
+#curl -L -o "$FILEOUT" "$FILE_DATASET"
 echo "Download complete"
 
-echo "Unzipping file"
-gunzip -f "$DIR/song-dataset.gz"
+echo "Unzipping file $FILE_OUT"
+tar -xvzf "$FILE_OUT"
 
 echo "Done!"

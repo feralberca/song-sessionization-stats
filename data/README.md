@@ -21,3 +21,5 @@ The schema for each the TSV is as follows:
 ## Downloads
 
 You may use the included `dataset-download.sh` script to download. Otherwise the data is also available [on this site](http://mtg.upf.edu/static/datasets/last.fm/lastfm-dataset-1K.tar.gz).
+
+The script was tested on an Ubuntu disto. Other distros may have different utilities or command parameters.
