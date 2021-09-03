@@ -1,0 +1,7 @@
+data/lastfm-dataset-1K
+data/output
+.idea
+.gradle
+app/target/**
+app/project/target/**
+target
