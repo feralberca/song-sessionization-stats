@@ -61,8 +61,8 @@ A happy ending test suite execution should finish like this:
 ### Technical decisions
 
 * The challenge could have been developed using multiple options. Before starting to code I've checked the options I had: 
-** Could either implement it by following a simple ETL process and then query the records with Presto or some other similar tool 
-** Could use Spark and code the logic and the tests using a functional approach.
+    * Could either implement it by following a simple ETL process and then query the records with Presto or some other similar tool 
+    * Could use Spark and code the logic and the tests using a functional approach.
 * I've choosen Spark because it's simple to write a distributed computation using either the DSL or SQL. Also it's important to consider that I found easier to write tests in an imperative lang than SQL and it's more maintanable. 
 * Spark makes the code scalable by distrubiting the processing among nodes. For this implementation and local execution we are just levaraging local CPU cores but in other runtime the computation could scale to hundreds of nodes and thousands of threads.
 * Scala was choosen because I like to use typed langs for pipeline development. Pipelines can grow to a high number of lines of code and maintaning that with a dynamic lang could be challenging.
