@@ -15,7 +15,7 @@ You will need to have the following setup in your local environment or wherever 
 
 
 * Clone this repo
-* Run [this script](data/dataset-download.sh) to download the dataset 
+* Run [this script](data/data-download.sh) to download the dataset 
 * Set the memory options, 4GB should be Ok
 ```
 $ export SBT_OPTS="-Xmx4G"
